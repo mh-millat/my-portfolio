@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import projects from './projectData';
@@ -39,8 +40,21 @@ const ProjectDetails = () => {
             <div className="mt-4">
               <h4 className="font-semibold">Links</h4>
               <div className="flex gap-3 mt-2">
-                <a href={project.live} target="_blank" rel="noreferrer" className="btn btn-sm btn-primary">Live Demo</a>
-                <a href={project.githubClient} target="_blank" rel="noreferrer" className="btn btn-sm btn-outline">Client Repo</a>
+                {project.live && (
+                  <a href={project.live} target="_blank" rel="noreferrer" className="btn btn-sm btn-primary">
+                    Live Demo
+                  </a>
+                )}
+                {project.githubClient && (
+                  <a href={project.githubClient} target="_blank" rel="noreferrer" className="btn btn-sm btn-outline">
+                    Client Repo
+                  </a>
+                )}
+                {project.githubServer && (
+                  <a href={project.githubServer} target="_blank" rel="noreferrer" className="btn btn-sm btn-outline">
+                    Server Repo
+                  </a>
+                )}
               </div>
             </div>
 
