@@ -1,6 +1,3 @@
-// import sportsClub from '../../../public/sports-club.png';
-// import FoodTracker from '../../../public/FoodTracker.png';
-// import RecipeBook from '../../../public/RECIPE BOOK.png';
 import sportsClub from '../../assets/sports-club.png';
 import FoodTracker from '../../assets/FoodTracker.png';
 import LAWYER from '../../assets/LAWYER.png';
